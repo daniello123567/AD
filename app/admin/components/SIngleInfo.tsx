@@ -25,7 +25,7 @@ function SingleInfo({setSingleProduct,singleProductInfo}:{setSingleProduct,singl
     setdeleting(true)
     await supabase.from('jewelries').delete().eq("id",singleProductInfo.id)
      setdeleting(false);
-       router.refresh()
+       router.push(`/admin`)
   }
   return (
     <div className='w-full z-[30000] h-full fixed bg-white/50 backdrop-blur-sm top-0'>
