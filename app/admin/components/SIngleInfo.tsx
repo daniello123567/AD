@@ -14,7 +14,7 @@ const Imager = ({src}:{src:string})=>{
   <Image className='w-full h-full object-cover' src={src} width={500} height={500} alt='image'/>
 </div>
 }
-function SingleInfo({setSingleProduct,singleProductInfo}:any) {
+function SingleInfo({setSingleProduct,singleProductInfo}:{setSingleProduct,singleProductInfo}) {
   const [deleting,setdeleting] = useState<boolean>(false)
   const [showConfirm,setshowConfirm] = useState<boolean>(false)
   const router = useRouter()
